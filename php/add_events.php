@@ -11,7 +11,7 @@ try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Verifique se o usuário está logado
+    // Verifica se o usuário está logado
     if (!isset($_SESSION['userId'])) {
         echo json_encode(['success' => false, 'message' => 'Usuário não logado']);
         exit;

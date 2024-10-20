@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const data = {};
-        if (username) data.newUsername = username; // Nome do campo ajustado
-        if (email) data.newEmail = email; // Nome do campo ajustado
+        if (username) data.newUsername = username;
+        if (email) data.newEmail = email;
 
         fetch('http://econograma.infinityfreeapp.com/php/update_user.php', {
             method: 'POST',

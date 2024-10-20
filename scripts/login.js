@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
             body: JSON.stringify({ login: login, senha: senha })
         })
         .then(response => {
-            console.log('Status da resposta:', response.status); // Adicione esta linha para depuração
+            console.log('Status da resposta:', response.status); // Linha para depuração
             return response.json();
         })
         .then(data => {
-            console.log('Dados recebidos:', data); // Adicione esta linha para depuração
+            console.log('Dados recebidos:', data); // Linha para depuração
             if (data.status === 'success') {
                 window.location.href = 'http://econograma.infinityfreeapp.com/html/abc.html'; 
             } else {

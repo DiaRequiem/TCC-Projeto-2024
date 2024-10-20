@@ -30,7 +30,6 @@ try {
         exit;
     }
 
-    // Construa a consulta SQL dinamicamente com base nos campos fornecidos
     $sql = "UPDATE usuarios SET ";
     $params = [];
 
