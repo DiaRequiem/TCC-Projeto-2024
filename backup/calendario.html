@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Calendar</title>
+  <script src='../scripts/index.global.min.js'></script>
+  <script src='../scripts/calendar.js' defer></script>
+  <style>
+    body {
+      margin: 40px 10px;
+      padding: 0;
+      font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    #calendar {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    #event-form {
+      display: none;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='calendar'></div>
+  <div id='event-form'>
+    <h3>Create Event</h3>
+    <form id="form">
+      <label for="title">Título:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="start">Início:</label>
+      <input type="datetime-local" id="start" name="start" required>
+
+      <label for="end">Fim:</label>
+      <input type="datetime-local" id="end" name="end">
+
+      <label for="type">Tipo:</label>
+      <select id="type" name="type" required>
+        <option value="Meeting">Opção1</option>
+        <option value="Call">Opção2</option>
+        <option value="Deadline">Opção3</option>
+        <option value="Other">Opção4</option>
+      </select>
+
+      <label for="location">Local:</label>
+      <select id="location" name="location" required>
+        <option value="Meeting">Opção1</option>
+        <option value="Call">Opção2</option>
+        <option value="Deadline">Opção3</option>
+        <option value="Other">Opção4</option>
+      </select>
+
+      <label for="description">Descrição:</label>
+      <textarea id="description" name="description"></textarea>
+
+      <button type="submit">Adicionar Evento</button>
+  </div>
+
+  <!-- Formulário de Detalhes do Evento -->
+  <div id="event-details-form" style="display:none;">
+    <form id="event-form">
+      <input type="hidden" id="event-id">
+      <label for="event-title">Título:</label>
+      <input type="text" id="event-title" name="title" required>
+
+      <label for="event-start">Início:</label>
+      <input type="datetime-local" id="event-start" name="start" required>
+
+      <label for="event-end">Fim:</label>
+      <input type="datetime-local" id="event-end" name="end">
+
+      <label for="event-type">Tipo:</label>
+      <select id="event-type" name="type" required>
+        <option value="Meeting">Reunião</option>
+        <option value="Call">Chamada</option>
+        <option value="Deadline">Prazo</option>
+        <option value="Other">Outro</option>
+      </select>
+
+      <label for="event-location">Local:</label>
+      <select id="event-location" name="location" required>
+        <option value="Office">Escritório</option>
+        <option value="Home">Casa</optiwon>
+        <option value="Remote">Remoto</option>
+        <option value="Other">Outro</option>
+      </select>
+
+      <label for="event-description">Descrição:</label>
+      <textarea id="event-description" name="description"></textarea>
+
+      <button type="button" id="delete-event">Excluir Evento</button>
+      <button type="submit">Salvar Alterações</button>
+    </form>
+  </div>
+  <!-- Botão de Logout Provisório -->
+  <button class="logout-button" id="logoutButton">Logout</button>
+
+  <script>
+    document.getElementById('logoutButton').addEventListener('click', function () {
+      // Redireciona para o script PHP de logout
+      window.location.href = 'http://localhost/econograma/php/logout.php'; // Altere para o caminho correto
+    });
+  </script>
+</body>
+
+</html>

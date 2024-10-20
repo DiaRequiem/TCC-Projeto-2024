@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define o tamanho do iframe para preencher a tela */
+#map {
+    width: 96%;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    border: 2px solid black;
+}

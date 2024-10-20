@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Calendar</title>
+  <script src='http://econograma.infinityfreeapp.com/scripts/index.global.min.js'></script>
+  <script src='http://econograma.infinityfreeapp.com/scripts/modal.js'></script>
+  <script src='http://econograma.infinityfreeapp.com/scripts/calendar.js' defer></script>
+  <link rel="stylesheet" href="http://econograma.infinityfreeapp.com/css/fullcalendar.css">
+  <link rel="stylesheet" href="http://econograma.infinityfreeapp.com/css/modal.css">
+  <script src="http://econograma.infinityfreeapp.com/scripts/menu-lateral.js"></script>
+  <link rel="stylesheet" href="http://econograma.infinityfreeapp.com/css/menu-lateral.css">
+</head>
+
+<body>
+  <div id="menu-lateral" class="menu-lateral">
+    <div class="dentro-menu">
+      <div class="menu-titulo">
+        <img src="http://econograma.infinityfreeapp.com/imagens/logo.png">
+        <h1>ECOnograma</h1>
+      </div>
+      <div class="sessao-botoes">
+        <div class="botao">
+          <a href="http://econograma.infinityfreeapp.com/html/abc.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/inicio-icon.png">
+            <p>Início</p>
+          </a>
+        </div>
+        <div class="botao ativo">
+          <a href="http://econograma.infinityfreeapp.com/html/calendario.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/calendario-icon.png">
+            <p>Calendário</p>
+          </a>
+        </div>
+        <div class="botao">
+          <a href="http://econograma.infinityfreeapp.com/html/guia.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/guias-icon.png">
+            <p>Guias</p>
+          </a>
+        </div>
+        <div class="botao">
+          <a href="http://econograma.infinityfreeapp.com/html/mapa.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/mapa-icon.png">
+            <p>Mapa</p>
+          </a>
+        </div>
+        <div class="botao">
+          <a href="http://econograma.infinityfreeapp.com/html/conquista.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/trocardepois-icon.png">
+            <p>Conquistas</p>
+          </a>
+        </div>
+      </div>
+      <div class="configuracoes">
+        <div class="botao">
+          <a href="http://econograma.infinityfreeapp.com/html/configuracoes.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/configuracoes-icon.png">
+            <p>Configurações</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    console.log('DECIDI MANTER O ERRO DO ARRASTE DE OVERLAY, NÃO TIVE TEMPO SUFICIENTE PARA ARRUMAR OU APRENDER SOBRE JS SUFICIENTE, NÃO AFETA NO PRODUTO FINAL, AINDA ESTÁ FUNCIONANDO. 19/08/2024');
+  </script>
+
+  <div class="main">
+    <div id='calendar'></div>
+  </div>
+
+  <!-- Sobreposição do Modal -->
+  <div id="modal-overlay" class="modal-overlay"></div>
+
+  <div id="event-form" class="modal">
+    <div id="modal-header" class="modal-header">
+      <div class="mod-bar-title">
+        <img src="http://econograma.infinityfreeapp.com/imagens/modal-icon.png">
+        <span>Adicionar Evento</span>
+      </div>
+
+      <button type="button" class="close" onclick="closeModal('event-form')">X</button>
+    </div>
+    <form id="form">
+      <div class="mod-caixa">
+        <label for="title">Título</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+
+      <div class="horario">
+        <div class="mod-caixa">
+          <label for="startDate">Data de Início</label>
+          <input type="date" id="startDate" name="startDate" required>
+        </div>
+
+
+        <div class="mod-caixa">
+          <label for="startTime">Hora de Início</label>
+          <input type="time" id="startTime" name="startTime" required>
+        </div>
+
+
+        <div class="mod-caixa">
+          <label for="endDate">Data de Fim</label>
+          <input type="date" id="endDate" name="endDate">
+        </div>
+
+
+        <div class="mod-caixa">
+          <label for="endTime">Hora de Fim</label>
+          <input type="time" id="endTime" name="endTime">
+        </div>
+      </div>
+
+      <div class="mod-caixa">
+        <label for="type">Tipo de Compostagem</label>
+        <select id="type" name="type" required>
+          <option value="Papel">Papel</option>
+          <option value="Plástico">Plástico</option>
+          <option value="Vidro">Vidro</option>
+          <option value="Metal">Metal</option>
+          <option value="Orgânico">Orgânico</option>
+        </select>
+      </div>
+
+      <div class="mod-caixa">
+        <label for="description">Descrição do Evento</label>
+        <textarea id="description" name="description"></textarea>
+      </div>
+      <div class="mod-buttons">
+        <input type="reset" value="Limpar">
+        <button class="submit" type="submit">Salvar</button>
+      </div>
+
+    </form>
+  </div>
+
+  <div id="event-details" class="modal">
+    <div id="modal-header" class="modal-header">
+      <div class="mod-bar-title">
+        <img src="http://econograma.infinityfreeapp.com/imagens/modal-icon.png">
+        <span>Detalhes do Evento</span>
+      </div>
+      <button type="button" class="close" onclick="closeModal('event-details')">X</button>
+    </div>
+    <div class="mod-caixa">
+      <p><strong>Título:</strong> <span id="event-title-text">Não especificado</span></p>
+    </div>
+    <div class="mod-caixa">
+      <p><strong>Início:</strong> <span id="event-start-text">Não especificado</span></p>
+    </div>
+    <div class="mod-caixa">
+      <p><strong>Fim:</strong> <span id="event-end-text">Não especificado</span></p>
+    </div>
+    <div class="mod-caixa">
+      <p><strong>Tipo:</strong> <span id="event-type-text">Não especificado</span></p>
+    </div>
+    <div class="mod-caixa">
+      <p><strong>Descrição:</strong> <span id="event-description-text">Não especificado</span></p>
+    </div>
+    <div class="mod-buttons">
+      <button class="del-button" type="button" id="delete-event">Excluir Evento</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

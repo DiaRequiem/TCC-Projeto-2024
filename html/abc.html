@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://econograma.infinityfreeapp.com/css/inicio.css">
+  <script src="http://econograma.infinityfreeapp.com/scripts/inicio.js"></script>
+  <script src="http://econograma.infinityfreeapp.com/scripts/inicio2.js"></script>
+  <script src="http://econograma.infinityfreeapp.com/scripts/inicio3.js"></script>
+  <script src="http://econograma.infinityfreeapp.com/scripts/menu-lateral.js"></script>
+  <link rel="stylesheet" href="http://econograma.infinityfreeapp.com/css/menu-lateral.css">
+  <title>Inicio</title>
+</head>
+
+<body>
+  <div id="menu-lateral" class="menu-lateral">
+    <div class="dentro-menu">
+      <div class="menu-titulo">
+        <img src="http://econograma.infinityfreeapp.com/imagens/logo.png">
+        <h1>ECOnograma</h1>
+      </div>
+      <div class="sessao-botoes">
+        <div class="botao ativo">
+          <a href="http://econograma.infinityfreeapp.com/html/abc.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/inicio-icon.png">
+            <p>Início</p>
+          </a>
+        </div>
+        <div class="botao">
+          <a href="http://econograma.infinityfreeapp.com/html/calendario.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/calendario-icon.png">
+            <p>Calendário</p>
+          </a>
+        </div>
+        <div class="botao">
+          <a href="http://econograma.infinityfreeapp.com/html/guia.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/guias-icon.png">
+            <p>Guias</p>
+          </a>
+        </div>
+        <div class="botao">
+          <a href="http://econograma.infinityfreeapp.com/html/mapa.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/mapa-icon.png">
+            <p>Mapa</p>
+          </a>
+        </div>
+        <div class="botao">
+          <a href="http://econograma.infinityfreeapp.com/html/conquista.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/trocardepois-icon.png">
+            <p>Conquistas</p>
+          </a>
+        </div>
+      </div>
+      <div class="configuracoes">
+        <div class="botao">
+          <a href="http://econograma.infinityfreeapp.com/html/configuracoes.html">
+            <img class="menu-imagem" src="http://econograma.infinityfreeapp.com/imagens/configuracoes-icon.png">
+            <p>Configurações</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="eventos">
+      <h1>Calendário de Hoje</h1>
+      <span id="info-message">Informações do evento:</span>
+      <div id="event-list" class="event-list"></div>
+    </div>
+
+    <div class="conquistas">
+      <h1>As conquistas de usuário ficarão aqui</h1>
+      <div class="box">
+        <div class="Username">
+          <p>Nome de Usuário: <span id="usernameDisplay"></span></p>
+        </div>
+        <img id="medalDisplay" src="images/default-medal.png" alt="Medalha"> <!-- Imagem da medalha padrão -->
+        <div class="conquista">
+          <img id="medalDisplay" src="images/medalha-inicial.png" alt="Medalha de Conquista">
+        </div>
+      </div>
+    </div>
+
+    <div class="historico">
+      <h1>Próximos Eventos</h1>
+      <div class="event-history" id="event-history">
+        <!-- Os eventos serão carregados via JS -->
+      </div>
+      <a href="http://econograma.infinityfreeapp.com/html/calendario.html">Ver próximos eventos</a>
+    </div>
+  </div>
+</body>
+
+</html>

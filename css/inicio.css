@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: grey;
+}
+
+/* body {
+    margin-left: 5vw;
+} */
+
+/*  */
+
+/* .container {
+    margin: 20px;
+} */
+
+.eventos {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#info-message {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.event-list {
+    margin-top: 20px;
+}
+
+.evento-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.evento-card:hover {
+    background-color: #f0f0f0;
+}
+
+.evento-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.evento-card p {
+    margin: 5px 0;
+}
+
+
+/*  */
+
+/* Conquistas */
+
+.conquista-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.conquista-card.desbloqueada {
+    background-color: #e0ffe0;
+}
+
+.conquista-card.bloqueada {
+    background-color: #f0f0f0;
+}
+
+.bloqueada-desc {
+    color: #999;
+}
+
+/*  */
+
+/* Histórico */
+
+.historico {
+    grid-column: span 3;
+    width: 50%;
+    height: 225px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: white;
+    margin: 15px auto;
+}
+
+.retangular {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ultimos {
+    padding: 10px;
+    margin: 15px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 12px;
+}
+
+/*  */

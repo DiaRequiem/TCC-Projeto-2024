@@ -1,0 +1,13 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.econograma.app
+productName: Econograma
+win:
+  icon: build/icon/logo.ico
+linux:
+  icon: build/icon/logo.png
+mac:
+  icon: build/icon/icon.icns
+files: []
+electronVersion: 31.3.0

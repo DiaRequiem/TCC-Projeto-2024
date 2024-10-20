@@ -1,0 +1,175 @@
+#event-form {
+    display: none;
+    margin-bottom: 20px;
+  }
+  
+  #event-details {
+    display: none;
+    margin-bottom: 20px;
+  }
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #032C15;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 600px;
+    max-width: 90%;
+    border-radius: 12px;
+    color: white;
+}
+
+.modal-header {
+    cursor: move;
+    background-color: #1C633B;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 11px 11px 0 0;
+    margin-bottom: 12px;
+}
+
+.mod-bar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mod-bar-title img {
+    width: 20%;
+    position: absolute;
+    left: 5px;
+}
+
+.mod-bar-title span {
+    font-style: italic;
+    margin-left: 75px;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.modal .close {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    background: transparent;
+    color: #ff0000;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.mod-caixa {
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    gap: 5px;
+}
+
+.mod-caixa input {
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.mod-caixa select {
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.modal .mod-caixa textarea {
+    resize: none;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: 24px;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.modal .horario {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.modal .horario input {
+    width: 100%;
+}
+
+.mod-buttons {
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.mod-buttons input, 
+.mod-buttons button {
+    font-weight: 600;
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mod-buttons button {
+    background-color: #227717;
+    padding: 10px 60px;
+    border-radius: 24px;
+}
+
+.mod-buttons input:hover {
+    color: red;
+}
+
+.mod-buttons button:hover {
+    background-color: #28881b;
+}
+
+.mod-buttons .del-button {
+    background-color: red;
+}
+
+.mod-buttons .del-button:hover {
+    background-color: #ee0000; 
+}

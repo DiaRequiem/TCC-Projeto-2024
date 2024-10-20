@@ -1,0 +1,60 @@
+Array
+(
+    [login] => teste
+    [senha] => aa
+)
+Array
+(
+    [id] => 1
+    [senha] => aa
+)
+Array
+(
+    [login] => teste
+    [senha] => aa
+)
+Array
+(
+    [id] => 1
+    [senha] => aa
+)
+Array
+(
+    [login] => teste
+    [senha] => aa
+)
+Array
+(
+    [id] => 1
+    [senha] => aa
+)
+Array
+(
+    [login] => teste
+    [senha] => aa
+)
+Array
+(
+    [id] => 1
+    [senha] => aa
+)
+Array
+(
+    [login] => teste
+    [senha] => aa
+)
+Array
+(
+    [id] => 1
+    [senha] => aa
+)
+Array
+(
+    [login] => teste
+    [senha] => aa
+)
+Array
+(
+    [id] => 1
+    [senha] => aa
+)

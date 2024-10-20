@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(60deg, rgba(189,222,189,1) 24%, rgba(174,208,174,1) 100%);
+}
+
+.header {
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    display: flex;
+    min-height: 10vw;
+    width: 100%;
+    background-color: #487045;
+    padding-left: 7vw;
+    margin-bottom: 4vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.header-bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vw;
+}
+
+.header-texto {
+    color: white;
+    margin-left: 14vw;
+}
+
+.bola {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 10%;
+    height: 95%;
+    background-color: #CFE3CF;
+    position: absolute;
+    left: 9%;
+}
+
+.conquistas {
+    padding: 25px;
+    background-color: #CFE3CF;
+    margin-left: 9vw;
+    margin-right: 3vw;
+    position: relative;
+    padding-bottom: 150px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.conquistas h1 {
+    margin-bottom: 15px;
+    width: 30%;
+    margin-left: 3vw;
+    text-align: center;
+}
+
+#achievements {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5%;
+}
+
+.conquistas .achievement-container:last-child {
+    position: absolute;
+    width: 45%;
+    right: 28%;
+    bottom: -6%;
+}
+
+.achievement-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    width: 100%;
+    padding-left: 150px;
+}
+
+.achievement-container img {
+    position: absolute;
+    left: -1.5%;
+}
+
+.achievement-container h3 {
+    font-size: 32px;
+}
+
+.achievement-container p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3B231A;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #EEEEEE;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0;
+    transition: width 0.5s;
+}
+
+.header .bola img {
+    width: 80%;
+}
+
+.achievement-container img {
+    width: 18.5%;
+}

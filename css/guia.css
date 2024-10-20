@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background: linear-gradient(60deg, rgba(189,222,189,1) 24%, rgba(174,208,174,1) 100%);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container-text {
+    margin-left: 5vw;
+    color: #3B231A;
+}
+
+.container-text h1 {
+    font-size: 36px;
+}
+
+.container-text p {
+    font-size: 28px;
+}
+
+.guides-grid {
+    margin-left: 15vw;
+}
+
+.guide-card {
+    width: 85%;
+    margin-top: 50px;
+}
+
+.container .guide-card a {
+    display: flex;
+    border-radius: 20px;
+    background-color: #61A95E;
+    text-decoration: none;
+    color: white;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px;
+    transition: 0.3s;
+}
+
+.container .guides-grid:last-child .guide-card {
+    margin-bottom: 40px;
+}
+
+.container .guide-card a:hover {
+    cursor: pointer;
+    transform: scale(1.015);
+}
+
+.guide-card a img {
+    border-radius: 20px 8px 8px 20px;
+}
+
+.guide-card a .text-card {
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: start;
+    position: relative;
+}
+
+.guide-card a .text-card h2 {
+    font-size: 32px;
+}
+
+.guide-card a .text-card p {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+a .text-card span {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.guide-card:nth-child(1) a .text-card span {
+    color: #3B231A;
+}
+.guide-card:nth-child(2) a .text-card span {
+    color: #D51E21;
+}
+.guide-card:nth-child(3) a .text-card span {
+    color: #eec81e;
+}
+.guide-card:nth-child(4) a .text-card span {
+    color: #015929;
+}
+.guide-card:nth-child(5) a .text-card span {
+    color: #00339B;
+}
